@@ -1,0 +1,62 @@
+
+
+
+Open your terminal (or Command Prompt on Windows) and run:
+
+```bash
+mvn -v
+```
+
+* If you see a version like `Apache Maven 3.x.x`, Maven is installed ✅
+* If not, you need to [install Maven](https://maven.apache.org/install.html) (easy process, I can guide you).
+
+---
+
+## 🛠 Step 2: Go to Project Folder
+
+Make sure you are in the root of your repo where `pom.xml` is:
+
+```bash
+cd path/to/bajaj-qualifier
+```
+
+---
+
+## 🛠 Step 3: Build the JAR
+
+Run:
+
+```bash
+mvn clean package
+```
+
+* `clean` removes old builds
+* `package` compiles and packages as a JAR
+
+After success 🎉, you’ll see this message at the end:
+
+```
+[INFO] Building jar: .../target/bajaj-qualifier-1.0.0.jar
+```
+
+---
+
+## 🛠 Step 4: Verify JAR
+
+Check the `target/` folder:
+
+```bash
+ls target/
+```
+
+You should see:
+
+```
+bajaj-qualifier-1.0.0.jar
+```
+
+---
+
+
+
+
