@@ -1,0 +1,48 @@
+# ----------------------------
+# Maven Build
+# ----------------------------
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# ----------------------------
+# IntelliJ IDEA
+# ----------------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# ----------------------------
+# Eclipse
+# ----------------------------
+.project
+.classpath
+.settings/
+bin/
+
+# ----------------------------
+# VS Code
+# ----------------------------
+.vscode/
+
+# ----------------------------
+# Logs and temp files
+# ----------------------------
+*.log
+*.tmp
+*.swp
+
+# ----------------------------
+# OS generated
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# JARs
+# Ignore all JARs but keep the final submission JAR
+# ----------------------------
+*.jar
+!target/bajaj-qualifier-1.0.0.jar
