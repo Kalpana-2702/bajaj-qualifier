@@ -1,0 +1,19 @@
+# Sample Output (Based on Provided Dataset)
+
+This file shows the result of the **final SQL query** executed on the given tables.
+
+---
+
+## 🔹 Query Recap
+```sql
+SELECT 
+    p.AMOUNT AS SALARY,
+    CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) AS NAME,
+    TIMESTAMPDIFF(YEAR, e.DOB, CURDATE()) AS AGE,
+    d.DEPARTMENT_NAME
+FROM PAYMENTS p
+JOIN EMPLOYEE e ON p.EMP_ID = e.EMP_ID
+JOIN DEPARTMENT d ON e.DEPARTMENT = d.DEPARTMENT_ID
+WHERE DAY(p.PAYMENT_TIME) <> 1
+ORDER BY p.AMOUNT DESC
+LIMIT 1;
